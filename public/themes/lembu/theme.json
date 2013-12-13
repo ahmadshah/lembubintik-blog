@@ -2,5 +2,5 @@
     "name": "Lembu",
     "description": "Lembubintik.com",
     "author": "Ahmad Shah Hafizan Hamidin",
-    "autoload": []
+    "autoload": ["helpers.php"]
 }

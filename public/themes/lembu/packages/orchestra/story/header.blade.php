@@ -8,12 +8,12 @@
                         <span class="fa fa-bar"></span>
                         <span class="fa fa-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Lembu<span>Bintik</span></a>
+                    <a class="navbar-brand" href="{{ route('base.route') }}">Lembu<span>Bintik</span></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
                         <li><a href="{{ route('base.route') }}">Home</a></li>
-                        <li><a href="about">About</a></li>
+                        <!--<li><a href="about">About</a></li>-->
                     </ul>
                 </div>
             </div>

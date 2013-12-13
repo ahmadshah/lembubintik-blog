@@ -3,14 +3,20 @@
 
         <div class="blog-post">
             <h3>Latest Blog Post</h3>
-            <div class="media">
-                <div class="media-body">
-                    <h5 class="media-heading"><a href="javascript:;">02 May 2013 </a></h5>
-                    <p>
-                        Donec id elit non mi porta gravida at eget metus amet int
-                    </p>
+
+            @foreach(latest_posts(5) as $post)
+                <div class="media">
+                    <div class="media-body">
+                        <h5 class="media-heading">
+                            <a href="{{ $post->link }}">{{ $post->title }}</a>
+                        </h5>
+                        <p>
+                            {{ Str::limit($post->body) }}
+                        </p>
+                    </div>
                 </div>
-            </div>
+            @endforeach
+
         </div>
 
     </div>
