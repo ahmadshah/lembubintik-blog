@@ -10,16 +10,21 @@
         <title>FlatLab Frontend | Blog</title>
 
         {{ HTML::style(Orchestra\Theme::to('css/bootstrap.min.css')) }}
-        {{ HTML::style(Orchestra\Theme::to('css/theme.css')) }}
         {{ HTML::style(Orchestra\Theme::to('css/bootstrap-reset.css')) }}
-        {{ HTML::style(Orchestra\Theme::to('assets/font-awesome/css/font-awesome.css')) }}
+        {{ HTML::style(Orchestra\Theme::to('css/font-awesome/css/font-awesome.css')) }}
+        {{ HTML::style(Orchestra\Theme::to('css/rainbow.css')) }}
         {{ HTML::style(Orchestra\Theme::to('css/style.css')) }}
         {{ HTML::style(Orchestra\Theme::to('css/style-responsive.css')) }}
+        {{ HTML::style(Orchestra\Theme::to('css/theme.css')) }}
 
     </head>
     <body>
         @include('orchestra/story::header')
         @yield('content')
         @include('orchestra/story::footer')
+
+        {{ HTML::script(Orchestra\Theme::to('js/jquery.js')) }}
+        {{ HTML::script(Orchestra\Theme::to('js/bootstrap.min.js')) }}
+        {{ HTML::script(Orchestra\Theme::to('js/rainbow-custom.min.js')) }}
     </body>
 </html>

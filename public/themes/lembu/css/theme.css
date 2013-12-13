@@ -12,3 +12,15 @@ body {
 .theme-showcase > p > .btn {
   margin: 5px 0;
 }
+
+.breadcrumbs {
+    padding: 5px 0;
+}
+
+pre {
+    border: 0;
+    border-top: 2px solid #475268;
+    border-bottom: 2px solid #475268;
+    -webkit-border-radius: 0px;
+    border-radius: 0xp;
+}
