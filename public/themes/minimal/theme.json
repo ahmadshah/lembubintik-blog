@@ -1,0 +1,6 @@
+{
+    "name": "Minimal",
+    "description": "Lembubintik.com",
+    "author": "Ahmad Shah Hafizan Hamidin",
+    "autoload": ["helpers.php"]
+}
