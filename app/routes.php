@@ -1,3 +1,3 @@
 <?php
 
-Route::get('/', ['uses' => 'Orchestra\Story\Routing\HomeController@showPosts', 'as' => 'base.route']);
+Route::get('/', ['uses' => 'Orchestra\Story\Routing\HomeController@posts', 'as' => 'base.route']);
